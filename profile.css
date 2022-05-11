@@ -1,0 +1,419 @@
+
+html{
+  /* smooth scroll behaviour */
+  scroll-behavior: smooth;
+}
+
+body{
+  /* defining the page style */
+  background-color: #1C1D20;
+  margin: 0;
+  padding: 0;
+  font-family: 'Canvas Regular', sans-serif;
+  color: #1C1D20;
+}
+
+a{
+  color:#eeeedf;
+}
+
+/* Aligning images */
+.asg img{
+  height:40%;
+  width: 40%;
+  background-size: cover;
+}
+
+
+.profile-pic{
+  background-image: url("me.png");
+  display: flex;
+  justify-content: center;
+  top: 10%;
+  width: 100%;
+  height: 110%;
+  background: #262729;
+  transition: fadein .3s ease-in;
+}
+
+
+.name{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10vh;
+  background-color: none;
+}
+
+section{
+  position: relative;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-size: 20vh;
+  color: #eeeedf;
+}
+
+
+.menu{
+  width: 100%;
+  height:100%;
+
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  z-index: 1;
+  display:flex;
+  width: 100%;
+  height:60px;
+  background: black;
+  opacity: 70%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navigate{
+  display: inline;
+  margin: 4vh;
+}
+
+ .navigate:hover{
+   background-color: grey;
+   color: black;
+   width: 100%;
+ }
+
+ .about-me{
+   -webkit-box-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   /* transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1); */
+   transform-style: preserve-3d;
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   align-items: center;
+ }
+
+ .about-me-cursive{
+   color: #eeeedf;
+   font-size: 1.75em;
+   /* font-style: italic; */
+   font-family: cursive;
+   justify-content: center;
+   text-align: center;
+   text-shadow: 20px;
+ }
+
+ .about-me-bold{
+   color: #cbbee6;
+   font-size: 2.5em;
+   font-style: oblique;
+   font-family: monospace;
+   justify-content: center;
+   text-align: center;
+   text-shadow: 20px;
+   display: flex;
+   /* height: 1vh; */
+   justify-content: center;
+   align-items: center;
+ }
+
+ .NYUAD_title {
+   margin: 3.5em;
+   text-align: center;
+   max-width: 75%;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  color: #540032;
+  background-image: url("NYUAD_back.jpg");
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+ .title{
+   padding-right: 0.9em;
+   padding-left: 0.9em;
+   font-family: 'Canvas Regular', sans-serif;
+   color: #ff9261;
+   font-size: 3.68em;
+   letter-spacing: 0.05em;
+   text-align: left;
+   text-transform: uppercase;
+   justify-content: center;
+
+ }
+
+ .asg{
+   margin: 2em;
+   padding: 2em;
+   font-size: 2em;
+   color: white;
+   /* border-radius: 5%;
+   border-style: dashed;
+   border-spacing: -10px;
+   border-color: white; */
+   text-align: left;
+   /* justify-content: center; */
+ }
+
+ .wrapper-1{
+   padding-top: 2em;
+   width: 700px;
+   height: 350px;
+   margin: 2em auto;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .main-element-1{
+   position: absolute;
+   top: 1%;
+   left: 1%;
+   display: block;
+   height: 98%;
+   width: 98%;
+   margin: auto;
+   align-self: center;
+   background-image: url("asg_1.jpg");
+   background-position: center;
+   background-size: cover;
+   z-index: 1;
+ }
+
+ .border-1{
+   position: absolute;
+   display: block;
+   top: -50%;
+   left: -50%;
+   z-index: -9;
+   display: block;
+   height: 200%;
+   width: 200%;
+   transform: rotate(-45deg);
+   overflow: hidden;
+   background: linear-gradient(to right, #1C1D20 20%, #1C1D20 40%, #ff9261 50%, #ff9261 55%, #1C1D20 70%, #1C1D20 100%);
+   background-size: 200% auto;
+
+   animation: shine 3s linear infinite;
+ }
+
+ .wrapper-2{
+   padding-top: 2em;
+   width: 700px;
+   height: 350px;
+   margin: 2em auto;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .main-element-2{
+   position: absolute;
+   top: 1%;
+   left: 1%;
+   display: block;
+   height: 98%;
+   width: 98%;
+   margin: auto;
+   align-self: center;
+   background-image: url("asg_2.jpg");
+   background-position: center;
+   background-size: cover;
+   z-index: 1;
+ }
+
+ .border-2{
+   position: absolute;
+   display: block;
+   top: -50%;
+   left: -50%;
+   z-index: -9;
+   display: block;
+   height: 200%;
+   width: 200%;
+   transform: rotate(-45deg);
+   overflow: hidden;
+   background: linear-gradient(to right, #1C1D20 20%, #1C1D20 40%, #ff9261 50%, #ff9261 55%, #1C1D20 70%, #1C1D20 100%);
+   background-size: 200% auto;
+
+   animation: shine 3s linear infinite;
+ }
+ .wrapper-3{
+   padding-top: 2em;
+   width: 700px;
+   height: 350px;
+   margin: 2em auto;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .main-element-3{
+   position: absolute;
+   top: 1%;
+   left: 1%;
+   display: block;
+   height: 98%;
+   width: 98%;
+   margin: auto;
+   align-self: center;
+   background-image: url("asg_3.jpg");
+   background-position: center;
+   background-size: cover;
+   z-index: 1;
+ }
+
+ .border-3{
+   position: absolute;
+   display: block;
+   top: -50%;
+   left: -50%;
+   z-index: -9;
+   display: block;
+   height: 200%;
+   width: 200%;
+   transform: rotate(-45deg);
+   overflow: hidden;
+   background: linear-gradient(to right, #1C1D20 20%, #1C1D20 40%, #ff9261 50%, #ff9261 55%, #1C1D20 70%, #1C1D20 100%);
+   background-size: 200% auto;
+
+   animation: shine 3s linear infinite;
+ }
+ .wrapper-4{
+   padding-top: 2em;
+   width: 700px;
+   height: 350px;
+   margin: 2em auto;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .main-element-4{
+   position: absolute;
+   top: 1%;
+   left: 1%;
+   display: block;
+   height: 98%;
+   width: 98%;
+   margin: auto;
+   align-self: auto;
+   background-image: url("asg_4.jpg");
+   background-position: center;
+   background-size: cover;
+   z-index: 1;
+ }
+
+ .border-4{
+   position: absolute;
+   display: block;
+   top: -50%;
+   left: -50%;
+   z-index: -9;
+   display: block;
+   height: 200%;
+   width: 200%;
+   transform: rotate(-45deg);
+   overflow: hidden;
+   background: linear-gradient(to right, #1C1D20 20%, #1C1D20 40%, #ff9261 50%, #ff9261 55%, #1C1D20 70%, #1C1D20 100%);
+   background-size: 200% auto;
+
+   animation: shine 3s linear infinite;
+ }
+
+
+ @keyframes shine {
+     to {
+       background-position: 200% center;
+     }
+   }fff
+
+   .wrapper-1:hover .wrapper-2:hover .wrapper-3:hover .wrapper-4:hover{
+    color: #ff9261;
+    opacity: 50%
+   }
+
+   .main-element-1:hover .main-element-2:hover .main-element-3:hover .main-element-4:hover{
+     width:100%;
+     height:100%
+     color: #ff9261;
+     background-color: #ff9261;
+     background-image: none; 
+     opacity: 50%
+   }
+
+   .border-1:hover .border-2:hover .border-3:hover .border-4:hover{
+     width: 300%;
+     height: 300%;
+     color: #ff9261;
+     opacity: 50%
+   }
+
+
+.project-separator{
+    width: 2vh;
+    height:2vh;
+    margin:0;
+    /* padding: -1vh;    */
+   }
+
+
+ .project-line{
+   width: 100%;
+   height: 0.06em;
+   background-color: #eee2d0;
+   -webkit-transform-origin: 0% 50%;
+   -ms-transform-origin: 0% 50%;
+   transform-origin: 0% 50%;
+ }
+
+
+ .footer{
+   margin: 5px;
+   padding: 2vh;
+   background-color: #eeeedf;
+   width: 100%;
+   bottom: 0px;
+   font-size: 1.5em;
+   position: relative;
+   text-align: center;
+   justify-content: center;
+ }
+
+ .sociallogo{
+   position: static;
+   width: 20px;
+   height:20px;
+   top:1700px;
+   left: 5px;
+
+ }
